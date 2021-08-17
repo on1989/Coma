@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Pug Page</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!--(if lt IE 9)-->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <!--(endif)-->
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="container">
+          <div class="row justify-content-space-between">
+            <div class="col">
+              <p>Графiк роботы: Пн. - Вс. з 09:00 по 20:00 </p>
+            </div>
+            <div class="col">
+              <ul>
+                <li><a href="tel:+380631234567">+38063 123 45 67</a></li>
+                <li><a href="tel:+380991234567">+38099 123 45 67</a></li>
+                <li class="icon-facebook"><a href="#"></a></li>
+                <li class="icon-instagram"><a href="#"></a></li>
+                <li class="icon-twitter"><a href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-5">
+            <div class="burger"> <span></span><span></span><span></span></div>
+            <ul class="menu">
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Статтi</a></li>
+              <li><a href="#">Контакти</a></li>
+            </ul>
+          </div>
+          <div class="col-2"><a class="logo" href="/"><img src="img/logo.svg" alt="logo"></a></div>
+          <div class="col-5">
+            <div class="row align-items-center">
+              <div class="col">
+                <ul class="menu">
+                  <li><a href="#">Отримати онлайн консультацiю</a></li>
+                  <li><a href="#">Записатися на прийом</a></li>
+                </ul>
+              </div>
+              <div class="col-auto"><a class="icon-bag" href="#">Кошик</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="menu">
+              <li><a href="#">Догляд за волоссям</a></li>
+              <li><a href="#">Вітаміни/Бади</a></li>
+              <li><a href="#">Тіло</a></li>
+              <li><a href="#">Косметика для обличчя</a></li>
+              <li><a href="#">Для чоловiкiв</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="brand">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="breadcrumbs"><span><a class="home" href="#">Головна</a></span><span><a href="#">Бренди</a></span><span>Lanza</span></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="question">
+                <p>Залишились питання?</p><a class="button transparent" href="#">Отримати онлайн консультацiю</a><a class="button" href="#">Записатися на прийом</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-5 col-12">
+              <div class="filters">
+                <form>
+                  <h4>Фiльтри</h4>
+                  <p>Тип товару</p>
+                  <div class="checkbox">
+                    <input id="checkbox-1" type="checkbox">
+                    <label for="checkbox-1">Крем</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox-2" type="checkbox">
+                    <label for="checkbox-2">Молочко для тiла</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox-3" type="checkbox">
+                    <label for="checkbox-3">Шампунь</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox-4" type="checkbox">
+                    <label for="checkbox-4">Маска</label>
+                  </div>
+                  <p>Цiна</p>
+                  <div class="inputs">
+                    <label for="">Вiд
+                      <input type="text">
+                    </label>
+                    <label for="">до
+                      <input type="text">
+                    </label>
+                  </div>
+                  <p>Наявнiсть</p>
+                  <div class="checkbox">
+                    <input id="checkbox-5" type="checkbox">
+                    <label for="checkbox-5">В наявностi</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox-6" type="checkbox">
+                    <label for="checkbox-6">В дорозi</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox-7" type="checkbox">
+                    <label for="checkbox-7">Предзамовлення</label>
+                  </div>
+                  <p>Акцiйний товар</p>
+                  <div class="checkbox">
+                    <input id="checkbox-8" type="checkbox">
+                    <label for="checkbox-8">Зi знижкою</label>
+                  </div>
+                  <p>Бренд</p>
+                  <div class="checkbox">
+                    <input id="checkbox-9" type="checkbox">
+                    <label for="checkbox-9">Lanza</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox-10" type="checkbox">
+                    <label for="checkbox-10">Бренд</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox-11" type="checkbox">
+                    <label for="checkbox-11">Iнший бренд</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox-12" type="checkbox">
+                    <label for="checkbox-12">Ще один бренд</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox-13" type="checkbox">
+                    <label for="checkbox-13">Бренд з довгим найменуванням</label>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-xxl-9 col-xl-9 col-lg-8 col-md-7 col-12">
+              <div class="product">
+                <div class="row row-cols-xl-3 row-cols-lg-2 row-cols-md-1 row-cols-sm-2 row-cols-1">
+                  <div class="col">
+                    <div class="item">
+                      <div class="img"><a class="link" href="#"></a><img src="img/product-1.png" alt="#">
+                        <p class="meta top">Топ продажiв</p>
+                      </div>
+                      <div class="description">
+                        <h2 class="title"> <a href="#">КРЕМ ДЛЯ ДЕПІЛЯЦІЇ З ЧОРНОЮ ГЛИНОЮ MOREMO BLACK CLAY HAIR REMOVAL CREAM B 100G</a></h2>
+                        <p class="availability">В дорозi </p>
+                        <p class="price">340₴</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="item">
+                      <div class="img"><a class="link" href="#"></a><img src="img/product-2.png" alt="#">
+                        <p class="meta top">Топ продажiв</p>
+                      </div>
+                      <div class="description">
+                        <h2 class="title"> <a href="#">КРЕМ ДЛЯ ДЕПІЛЯЦІЇ З ЧОРНОЮ ГЛИНОЮ MOREMO BLACK CLAY HAIR REMOVAL CREAM B 100G</a></h2>
+                        <p class="availability active">В наявностi</p>
+                        <p class="price">340₴</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="item">
+                      <div class="img"><a class="link" href="#"></a><img src="img/product-3.png" alt="#">
+                        <p class="meta stoc">Акцiя</p>
+                      </div>
+                      <div class="description">
+                        <h2 class="title"> <a href="#">КРЕМ ДЛЯ ДЕПІЛЯЦІЇ З ЧОРНОЮ ГЛИНОЮ MOREMO BLACK CLAY HAIR REMOVAL CREAM B 100G</a></h2>
+                        <p class="availability active">В наявностi</p>
+                        <p class="price">340₴</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="item">
+                      <div class="img"><a class="link" href="#"></a><img src="img/no-photo.png" alt="#">
+                        <p class="meta top">Топ продажiв</p>
+                      </div>
+                      <div class="description">
+                        <h2 class="title"> <a href="#">КРЕМ ДЛЯ ДЕПІЛЯЦІЇ З ЧОРНОЮ ГЛИНОЮ MOREMO BLACK CLAY HAIR REMOVAL CREAM B 100G</a></h2>
+                        <p class="availability active">В наявностi</p>
+                        <p class="price">340₴</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="item">
+                      <div class="img"><a class="link" href="#"></a><img src="img/product-4.png" alt="#">
+                        <p class="meta top">Топ продажiв</p>
+                      </div>
+                      <div class="description">
+                        <h2 class="title"> <a href="#">КРЕМ ДЛЯ ДЕПІЛЯЦІЇ З ЧОРНОЮ ГЛИНОЮ MOREMO BLACK CLAY HAIR REMOVAL CREAM B 100G</a></h2>
+                        <p class="availability active">В наявностi</p>
+                        <p class="price">340₴</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="item">
+                      <div class="img"><a class="link" href="#"></a><img src="img/product-5.png" alt="#">
+                        <p class="meta top">Топ продажiв</p>
+                      </div>
+                      <div class="description">
+                        <h2 class="title"> <a href="#">КРЕМ ДЛЯ ДЕПІЛЯЦІЇ З ЧОРНОЮ ГЛИНОЮ MOREMO BLACK CLAY HAIR REMOVAL CREAM B 100G</a></h2>
+                        <p class="availability active">В наявностi</p>
+                        <p class="price">340₴</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="item">
+                      <div class="img"><a class="link" href="#"></a><img src="img/product-6.png" alt="#">
+                        <p class="meta top">Топ продажiв</p>
+                      </div>
+                      <div class="description">
+                        <h2 class="title"> <a href="#">КРЕМ ДЛЯ ДЕПІЛЯЦІЇ З ЧОРНОЮ ГЛИНОЮ MOREMO BLACK CLAY HAIR REMOVAL CREAM B 100G</a></h2>
+                        <p class="availability active">В наявностi</p>
+                        <p class="price">340₴</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="item">
+                      <div class="img"><a class="link" href="#"></a><img src="img/product-7.png" alt="#">
+                        <p class="meta top">Топ продажiв</p>
+                      </div>
+                      <div class="description">
+                        <h2 class="title"> <a href="#">КРЕМ ДЛЯ ДЕПІЛЯЦІЇ З ЧОРНОЮ ГЛИНОЮ MOREMO BLACK CLAY HAIR REMOVAL CREAM B 100G</a></h2>
+                        <p class="availability active">В наявностi</p>
+                        <p class="price">340₴</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="item">
+                      <div class="img"><a class="link" href="#"></a><img src="img/product-1.png" alt="#">
+                        <p class="meta top">Топ продажiв</p>
+                      </div>
+                      <div class="description">
+                        <h2 class="title"> <a href="#">КРЕМ ДЛЯ ДЕПІЛЯЦІЇ З ЧОРНОЮ ГЛИНОЮ MOREMO BLACK CLAY HAIR REMOVAL CREAM B 100G</a></h2>
+                        <p class="availability">В дорозi </p>
+                        <p class="price">340₴</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12"><a class="button" href="#">Бiльше товарiв</a>
+                    <div class="wp-pagenavi">
+                      <!--a.prevpostslink.icon-left(href='#')--><span class="current">1</span><a class="page larger" href="#">2</a><a class="page larger" href="#">3</a><span class="extend">...</span><a class="larger page" href="#">12</a><a class="nextpostslink icon-right" href="#"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="description-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2>COMA - магазин професійної люксової косметики для шкіри і волосся.</h2>
+              <p>У нас ви не просто купите черговий флакончик, який буде порошиться на полиці.<br>У нашому магазині ви отримаєте повноцінну консультацію фахівця, який підбере лікувальні або Догляду косметичні засоби, з використанням яких ваше волосся і шкіра стануть дивовижно красивим і здоровим.</p>
+              <p>За п'ять років нашої роботи ми успішно проконсультували 5000 прекрасних дівчат, більшість з яких стали нашими постійними клієнтками. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 col-12"><a class="logo" href="#"><img src="img/logo-wight.svg" alt="logo"></a><a class="tel" href="tel:+380631234567">+38063 123 45 67</a><a class="tel" href="tel:+380991234567">+38099 123 45 67</a>
+            <p>Графiк роботы: <br>Пн. - Нд. з 09:00 по 20:00 </p>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <ul class="menu">
+              <li><a href="#">Догляд за волоссям</a></li>
+              <li><a href="#">Вітаміни/Бади</a></li>
+              <li><a href="#">Тіло</a></li>
+              <li><a href="#">Косметика для обличчя</a></li>
+              <li><a href="#">Для чоловiкiв</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <ul class="menu">
+              <li><a href="#">Назва бренду</a></li>
+              <li><a href="#">Довга назва бренду</a></li>
+              <li><a href="#">Назва iношого бренду</a></li>
+              <li><a href="#">Назва бренду</a></li>
+              <li><a href="#">Останнiй бренд</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12 align-self-end">
+            <p>Ми у соц. мережах</p>
+            <ul class="soc">
+              <li class="icon-facebook"><a href="#"></a></li>
+              <li class="icon-instagram"><a href="#"></a></li>
+              <li class="icon-twitter"><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p>Coma 2021 © Усi права захищенi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/build.js"></script>
+  </body>
+</html>

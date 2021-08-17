@@ -1,0 +1,111 @@
+$black:#111;
+$white:#fff;
+$red:#F14F4F;
+$grey:#A0A0A0;
+$green:#4FBD1B;
+$Montserrat: 'Montserrat', sans-serif;
+.banner{
+	margin-bottom: 25px;
+	.banner-slider{
+		background: #E6E7E9;
+		.slick-arrow {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			cursor: pointer;
+			z-index: 1;
+			&:hover{
+				&:before{
+					color: rgba(17,17,17,0.6);
+				}
+			}
+			&:before{
+				transition: all 0.3s ease;
+				font-size: 20px;
+			}
+			&.icon-left{
+				left: 15px;
+			}
+			&.icon-right{
+				right: 15px;
+			}
+		}
+
+		.slick-dots{
+			bottom: 15px;
+			li{
+				width: 5px;
+				height: 5px;
+				margin: 0 7.5px;
+				&.slick-active{
+					button{
+						background: $black;
+					}
+				}
+				button{
+					width: 5px;
+					height: 5px;
+					border-radius: 50%;
+					background: $grey;
+					padding: 0;
+					&:before{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.item{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.description{
+		padding-left: 110px;
+		h2.title{
+			font-size: 36px;
+			text-transform: uppercase;
+			margin-bottom: 5px;
+			color: $black;
+		}
+		h5.meta{
+			display: -webkit-inline-flex;
+			display: -moz-inline-flex;
+			display: -ms-inline-flex;
+			display: -o-inline-flex;
+			display: inline-flex;
+			border: 1px solid $black;
+			color: $black;
+			font: 12px;
+			padding: 5px;
+			margin-bottom: 15px;
+		}
+		p.desc{
+			font-size: 14px;
+			color: $black;
+			margin-bottom: 15px;
+			max-width: 345px;
+		}
+	}
+	.img{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		width: 744px;
+		height: 100%;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: center;
+		}
+	}
+}

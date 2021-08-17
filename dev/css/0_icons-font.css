@@ -1,0 +1,66 @@
+/**
+custom-icons Webfont
+*/
+
+@font-face {
+    font-family: 'GOTHIC';
+    src: url('../fonts/GOTHIC.ttf');
+    src: url('../fonts/GOTHIC-icons.eot') format('embedded-opentype'), url('../fonts/GOTHIC-icons.woff2') format('woff2'), url('../fonts/customGOTHICicons.woff') format('woff'), url('../fonts/GOTHIC-icons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'custom-icons';
+    src: url('../fonts/custom-icons.eot?1629114952856');
+    src: url('../fonts/custom-icons.eot?#iefix-1629114952856') format('embedded-opentype'), url('../fonts/custom-icons.woff2?1629114952856') format('woff2'), url('../fonts/custom-icons.woff?1629114952856') format('woff'), url('../fonts/custom-icons.ttf?1629114952856') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+    font-family: 'custom-icons';
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: normal;
+    font-style: normal;
+    speak: none;
+    text-decoration: inherit;
+    font-size: inherit;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*
+Glyphs list
+*/
+
+.icon-bag:before {
+        content: '\ea01';
+    }
+    .icon-facebook:before {
+        content: '\ea02';
+    }
+    .icon-instagram:before {
+        content: '\ea03';
+    }
+    .icon-left:before {
+        content: '\ea04';
+    }
+    .icon-minus:before {
+        content: '\ea05';
+    }
+    .icon-plus:before {
+        content: '\ea06';
+    }
+    .icon-right:before {
+        content: '\ea07';
+    }
+    .icon-twitter:before {
+        content: '\ea08';
+    }

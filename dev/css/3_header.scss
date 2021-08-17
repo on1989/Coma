@@ -1,0 +1,144 @@
+$black:#111;
+$white:#fff;
+$red:#F14F4F;
+$grey:#A0A0A0;
+$green:#4FBD1B;
+$Montserrat: 'Montserrat', sans-serif;
+header{
+	.top-header{
+		background: $black;
+		padding: 10px 0;
+		p{
+			color: $white;
+			font-size: 12px;
+		}
+		ul{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content:flex-end;
+			align-items: center;
+			li{
+				&:not([class*="icon-"]){
+					margin-left: 10px;
+				}
+				&[class*="icon-"]{
+					position: relative;
+					margin-left: 25px;
+					&:hover{
+						&:before{
+							color: rgba(255,255,255,0.6);
+						}
+					}
+					&:before{
+						color: $white;
+						font-size: 20px;
+					}
+					a{
+						font-size: 0;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						right: 0;
+						left: 0;
+					}
+				}
+				a{
+					color: $white;
+					font-size: 12px;
+					text-decoration: none;
+					transition: all 0.3s ease;
+					&:hover{
+						color: rgba(255,255,255,0.6);
+					}
+				}
+			}
+		}
+	}
+	.logo{
+		width: 88px;
+		display: block;
+		margin: 10px auto;
+	}
+	.icon-bag{
+		font-size: 16px;
+		color: $black;
+		font-weight: 600;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		&:before{
+			margin-right: 12px;
+			font-size: 20px;
+		}
+		&:hover{
+			color: rgba(17,17,17,0.6);
+		}
+	}
+	.menu{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		a{
+			font-size: 14px;
+			color: $black;
+			transition: all 0.3s ease;
+			&:hover{
+				color: rgba(17,17,17,0.6);
+			}
+		}
+	}
+	.col-5{
+		&:last-of-type{
+			.menu{
+				justify-content: flex-end;
+				li{
+					&:last-of-type{
+						margin-left: 15px;
+					}
+				}
+			}
+		}
+		&:first-of-type{
+			.menu{
+				li{
+					margin-right: 30px;
+				}
+				a{
+					text-decoration: none;
+
+				}
+			}
+		}
+	}
+	.col-12{
+		.menu{
+			justify-content: center;
+			padding: 20px 0;
+			border-bottom: 1px solid #cfcfcf;
+			border-top: 1px solid #cfcfcf;
+			margin-bottom: 20px;
+			li{
+				margin: 0px 20px;
+			}
+			a{
+				text-decoration: none;
+			}
+		}
+	}
+}

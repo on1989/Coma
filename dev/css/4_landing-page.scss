@@ -1,0 +1,47 @@
+.landing-product{
+	& + .question-block{
+		.container{
+			max-width: 1130px;
+		}
+	}
+	.container{
+		max-width: 1130px;
+	}
+	.text{
+		max-width: 544px;
+		h1{
+			font-size: 24px;
+			color: #111;
+			margin-bottom: 24px;
+		}
+		p{
+			font-size: 14px;
+			color: #111;
+			margin-bottom: 30px;
+			&:last-of-type{
+				margin-bottom: 0;
+			}
+		}
+	}
+	.row{
+		margin-bottom: 50px;
+		img{
+			margin: 0 auto;
+			display: table;
+		}
+		&:last-of-type{
+			margin-bottom: 20px;
+		}
+		&:nth-of-type(2n){
+			.text{
+				margin: 0 0 0 auto;
+			}
+			.col-lg-6{
+				&:last-of-type{
+					order: -1;
+
+				}
+			}
+		}
+	}
+}
